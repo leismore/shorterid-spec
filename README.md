@@ -1,14 +1,42 @@
-# Leismore Shorter ID Specification v1.0.0
+# Leismore ShorterID Specification v2.0.0 LTS
+
+
+
+
+------------------------------------------------------------------------------
+
+28 February 2023
+
+## Authors
+
+* Kyle Chine [Leismore](https://www.leismore.co) <https://kylechine.leismore.co>
+
+## Copyright
+
+[GNU Free Documentation License Version 1.3](https://lmos.leismore.org/shorterid-spec/v2-0-0/rep/LICENSE)
+
+## Canonical URLs
+
+* This version:      <https://lmos.leismore.org/shorterid-spec/v2-0-0/rep/README.md>
+* Latest version:    <https://lmos.leismore.org/shorterid-spec/latest/rep/README.md>
+
+* Project Homepage:  <https://lmos.leismore.org/shorterid-spec>
+* GitHub:            <https://github.com/leismore/shorterid-spec>
+
+------------------------------------------------------------------------------
+
+
+
 
 ## Introduction
 
-Leismore Shorter ID is a universally unique identifier based on [Nano ID](https://github.com/ai/nanoid) (Sitnik [2017] 2021). This document describes its purpose, format, recommended comparison method, and other technical details.
+Leismore ShorterID is a universally unique identifier based on [Nano ID](https://github.com/ai/nanoid) (Sitnik [2017] 2021). This document describes its purpose, format, recommended comparison method, and other technical details.
 
-## Differences from Leismore Short ID
+## Differences from Leismore ShortID
 
-The Short ID is designed for digital medias, while the Shorter ID is for non-digital medias such as paper and with more considerations for human readability or sharing requirement.
+[Leismore ShortID](https://lmos.leismore.org/shortid-spec) (Chine [2021] 2021) is designed for digital medias, while Leismore ShorterID is for non-digital medias such as paper and with more considerations for human readability or sharing requirements.
 
-Comparison the Short ID, Leismore Shorter ID is:
+Comparison to [Leismore ShortID](https://lmos.leismore.org/shortid-spec) (Chine [2021] 2021), Leismore ShorterID is:
 
 1. Shorter
 2. Case-insensitive
@@ -34,7 +62,7 @@ Ideally, a universally unique identifier exposing to end-users or external appli
 
 ## Recommended Comparison Method
 
-The `-` characters are used purely for the human readability reason. It must not be considered as a semantics part in Leismore Shorter ID. While doing ID comparison, it must be removed from the IDs.
+The `-` characters are used purely for the human readability reason. It must not be considered as a semantics part in Leismore ShorterID. While doing ID comparison, it must be removed from the IDs.
 
 ## Chance of Collision
 
@@ -42,6 +70,7 @@ When 1,000 IDs are being generated per hour, in order to have a 1% probability o
 
 ## References
 
+* Chine, Kyle. (2021) 2021. “Leismore ShortID Specification v4.0.0 LTS.” Leismore. https://github.com/leismore/shortid-spec.
 * Sitnik, Andrey. (2017) 2021. Nano ID. JavaScript. https://github.com/ai/nanoid.
 * Lashmanov, Stanislav. (2018) 2021. Nanoid-Dictionary. JavaScript. https://github.com/CyberAP/nanoid-dictionary.
 * Zhuravlёv, Aleksandr. n.d. Nano ID CC. Web. Accessed October 19, 2021. https://zelark.github.io/nano-id-cc.
